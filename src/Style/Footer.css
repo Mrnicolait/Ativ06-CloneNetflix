@@ -1,0 +1,65 @@
+
+footer {
+    height: 700px;
+    width: 100vw;
+    background-color: rgb(7, 7, 7);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20% ;
+    gap: 4rem;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+    gap: 20px; /* Espaçamento entre as colunas */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-list li {
+    color: #888888;
+    font-size: 18px;
+
+}
+
+p {
+    font-size: 20px;
+    color: #888888;
+    font-weight: 500;
+}
+
+.custom-select {
+    appearance: none; /* Remove a aparência padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #333; /* Cor de fundo do select */
+    color: white; /* Cor do texto */
+    padding: 10px 38px 10px 12px; /* Espaçamento interno */
+    border: 1px solid #444; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    outline: none; /* Remove o contorno */
+    width: 200px; /* Largura fixa */
+    position: relative; /* Para controlar a posição do ícone */
+}
+
+.custom-select:focus {
+    border-color: #555; /* Cor da borda ao focar */
+}
+
+.custom-select::after {
+    content: '\f0dc'; /* Código do ícone */
+    font-family: 'bootstrap-icons'; /* Fonte do ícone */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente o ícone */
+    pointer-events: none; /* Não interfere na usabilidade do select */
+    font-size: 16px; /* Tamanho do ícone */
+}

@@ -1,0 +1,144 @@
+
+.category-section {
+  margin: 2rem 0;
+}
+
+.category-section h1 {
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+.movie-card {
+  margin-right: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.movie-card img {
+  width: 200px; /* Ajuste conforme necessário */
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.movie-info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.play-btn {
+  background-color: rgb(216, 34, 34);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  position: absolute;
+  color: #fff;
+  font-weight: 800;
+  bottom: 200px;
+  left: 50px;
+  overflow: hidden;
+  font-size: 56px;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 100px; 
+  left: 120px; 
+  transform: translate(-50%, -50%);
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+.prev-button:hover, .next-button:hover, .play-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+  z-index: 1000;
+  }
+  
+  .modal-content {
+  position: relative;
+  max-width: 300px; /* Limitar largura */
+  max-height: 450px; /* Limitar altura */
+  border-radius: 10px; /* Borda arredondada */
+  overflow: hidden; /* Remove a rolagem */
+  }
+  
+  .modal-content img {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+  }
+  
+  .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* "x" branco */
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para destacar o "x" */
+  padding: 5px;
+  border-radius: 50%; /* Deixa o "x" redondo */
+  }
