@@ -13,7 +13,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/Ativ06_CloneNetflix" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home/>}/>
         <Route path="/landingpage" element={<LandingPage/>}/>
       </Routes>
