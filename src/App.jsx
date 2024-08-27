@@ -13,9 +13,9 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/Ativ06-CloneNetflix" element={<Login />} />
-        <Route path="/Ativ06-CloneNetflix/home" element={<Home/>}/>
-        <Route path="/Ativ06-CloneNetflix/landingpage" element={<LandingPage/>}/>
+        <Route path="/*" element={<Login />} />
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/landingpage" element={<LandingPage/>}/>
       </Routes>
     </Router>
     </>
