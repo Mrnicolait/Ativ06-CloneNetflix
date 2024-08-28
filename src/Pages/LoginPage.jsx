@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import backgroundImage from '../Images/backgroundnetflix.jpg';
 import logo from '../Images/netflix-logo-png-2583.png';
 import Footer from '../components/Rodape';
@@ -9,6 +9,8 @@ function Login() {
   const [emailOrPhone, setEmailOrPhone] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  const navigate = useNavigate();
 
   const isValidEmail = (email) => {
     return email.includes('@') && email.includes('.');
@@ -28,7 +30,7 @@ function Login() {
     } else {
       setErrorMessage('');
       // Redirecionar para a página home se a validação passar
-      window.location.href = '/home';
+      navigate('/home');
     }
   };
 
@@ -44,9 +46,13 @@ function Login() {
       >
         <div className="login-container" style={{ zIndex: 1 }}>
           <div className="header">
-            <Link to="/landingpage">
-              <img src={logo} alt="logo da netflix" className="logo" />
-            </Link>
+            <img 
+              src={logo} 
+              alt="logo da netflix" 
+              className="logo" 
+              onClick={() => navigate('/landingpage')}
+              style={{ cursor: 'pointer' }}
+            />
           </div>
           <section className="login-content">
             <h1>Entrar</h1>
